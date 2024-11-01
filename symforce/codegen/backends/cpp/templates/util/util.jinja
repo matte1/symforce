@@ -371,6 +371,7 @@ _{{ lhs }} = {{ rhs }};
     {{ format_output_dense(name, type, terms, spec, scalar_type) | indent(width=4) | trim }}
         {% else %}
     if ( {{ name }} != nullptr ) {
+
         {{ format_output_dense(name, type, terms, spec, scalar_type) | indent(width=8) | trim }}
     }
         {% endif %}
